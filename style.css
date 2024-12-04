@@ -1,0 +1,125 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    background-color: #f7f7f7; /* Fondo gris claro */
+    color: #333; /* Color oscuro para el texto */
+    padding: 20px;
+}
+
+/* Contenedor principal */
+#div-principal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para el contenedor de botones */
+#form-seleccion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Colores pastel para los botones */
+#boton-pequeño {
+    background-color: #ffb3b3; /* Rosa pastel */
+    color: #fff;
+}
+
+#boton-mediano {
+    background-color: #ffeb99; /* Amarillo pastel */
+    color: #fff;
+}
+
+#boton-grande {
+    background-color: #b3d9ff; /* Azul pastel */
+    color: #fff;
+}
+
+/* Efecto de hover en los botones */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para la lista de perros */
+#lista_perros {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada perro */
+.perro {
+    background-color: #e6f9f7; /* Verde menta claro */
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Efecto al pasar el cursor por encima del perro */
+.perro:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos y contenido de los perros */
+.perro h6 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.perro img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.perro p ul {
+    list-style: none;
+    padding: 0;
+}
+
+.perro p ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Diseño responsive para móviles */
+@media (max-width: 768px) {
+    #form-seleccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lista_perros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perro {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
